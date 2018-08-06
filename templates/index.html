@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+        type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/prettify.css') }}">
+
+
+	<title> Face Emoji Generation </title>
+	 <!-- Face Emoj Generation -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+
+	<nav>
+		<h1>wsl2</h1>
+		<img src={{ url_for('static', filename='blacktemplate/qr.png') }} align="right" width="3.7%"/>
+
+	</nav>
+
+	<header>
+	  <div class="container">
+	    <h2 class="docs-header"> Human Face Emoji Generation </h2>
+	    <dd>Please input a human face, the system will generate the required emoj of this face for you.</dd>
+	  </div>
+	</header>
+
+
+	<div class="container">
+
+
+		<!-- <div class="docs-content" display="inline-block"> -->
+
+		<!-- </div> -->
+	</div>
+
+
+	<div class="container" id="imgholder">
+		<ul class="docs-nav" id="menu-left">
+
+				<h4>Select Face</h4>
+				<form action="classify_upload" enctype="multipart/form-data" role= form name="form1" method="post">
+						<div class="upload">
+							<input id="f" type="file" name="imagefile" onchange="change()" />
+							<li class="separator"></li>
+							<button type="submit" name="button" class="submit"><h5 class="submit2">Upload</h5></button>
+						</div>
+				</form>
+
+				<div class="select emoj" display="inline-block" text-align:center>
+					<!-- <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select Emoj</h4> -->
+					<li class="separator"></li>
+
+					<form action="indifference" method="get" enctype="multipart/form-data">
+						<button type="submit" class="expression" name="button" style="width:100%"><h4>Normal</h4></button>
+					</form>
+
+
+					<form action="angry" method="get" enctype="multipart/form-data">
+						<button class="expression" type="submit" name="button" style="width:100%"><h4>Angry</h4></button>
+					</form>
+
+
+					<form action="sad" method="get" enctype="multipart/form-data">
+						<button class="expression" type="submit" name="button" style="width:100%"><h4>Sad</h4></button>
+					</form>
+
+
+					<form action="happy" method="get" enctype="multipart/form-data">
+						<button class="expression" type="submit" name="button" style="width:100%"><h4>Happy</h4></button>
+					</form>
+					<li class="separator"></li>
+				</div>
+				<li><a href={{ url_for('gallery') }} class=" ">Gallery</a></li>
+		</ul>
+
+
+		<div class="docs-content" display="inline-block">
+
+			<!-- <p class="middle_bar">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Initial Face &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Transfered Face </p> -->
+			<p class="middle_bar">&nbsp&nbsp Initial Face &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Transferred Face </p>
+			
+			<a>
+				<img id="preview" name="pic" display="inline-block" width="49%" height="49%" src={{ inputimagesrc }}  align="middle"/>
+			</a>
+			<!-- onload="if(this.width >= 320){this.width = 320}" -->
+			<a>
+				<img id="after" name="after_pic" display="inline-block" width="49%" height="49%" src={{ imagesrc }} align="middle"/>
+			</a>
+		</div>
+
+	</div>
+	<br/>
+	<br/>
+<!-- 	<br/>
+	<br/>
+	<br/> -->
+
+
+
+
+	<section class="vibrant centered">
+	  <div class="container">
+	    <h4> Build a better world with Artificial Intelligence together.</h4>
+
+	  </div>
+	</section>
+
+	<footer>
+	  <div class="container">
+	    <p> &copy; 2018 wsl2 | Contact Info: wsl2_imageprocessing@163.com | <img src={{ url_for('static', filename='blacktemplate/qr.png') }} align="right" width="7%"/></p>
+	  </div>
+	</footer>
+
+
+</body>
+
+<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+
+
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/layout.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.localscroll-1.2.7.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.scrollTo-1.4.3.1.js') }}"></script>
+<script src="{{ url_for('static',filename='js/placeImage.js') }}"></script>
+
+</html>

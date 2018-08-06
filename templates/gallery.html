@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+        type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/prettify.css') }}">
+
+
+	<title> Face Emoji Generation </title>
+	 <!-- Face Emoj Generation -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+
+	<nav>
+		<h1>wsl2</h1>
+		<img src={{ url_for('static', filename='blacktemplate/qr.png') }} align="right" width="3.7%"/>
+
+	</nav>
+
+	<header>
+	  <div class="container">
+	    <h2 class="docs-header"> Human Face Emoji Generation </h2>
+	    <dd>Please input a human face, the system will generate the required emoj of this face for you.</dd>
+	  </div>
+	</header>
+
+
+	
+
+
+	<div class="container" id="imgholder">
+		<ul class="docs-nav" id="menu-left">
+
+				<h4>Gallery</h4>
+				<li class="separator"></li>
+				<li><a href="#person1" class=" ">Person 1</a></li>
+				<li><a href="#person2" class=" ">Person 2</a></li>
+				<li><a href="#person3" class=" ">Person 3</a></li>
+				<li><a href="#happy_img" class=" ">Happy</a></li>
+				<li><a href="#sad_img" class=" ">Sad</a></li>
+				<li><a href="#angry_img" class=" ">Angry</a></li>
+				<li><a href="#indifference_img" class=" ">Normal</a></li>
+				<li class="separator"></li>
+				<li class="separator"></li>
+				<li><a href={{ url_for('index') }} class=" ">Back</a></li>
+
+
+				
+				<!-- <li><a href="./gallery.html" class=" ">Gallery</a></li> -->
+		</ul>
+
+
+		<div class="docs-content" display="inline-block">
+
+			<br/>
+			<hr/>
+			<p>Person 1</p>
+			<div id="person1">
+				<img src={{ url_for('static', filename='gallery/happy01.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad01.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry01.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference01.jpg') }} width=20%>
+			</div>
+
+			<br/>
+			<hr/>
+			<p>Person 2</p>
+			<div id="person2">
+				<img src={{ url_for('static', filename='gallery/happy02.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad02.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry02.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference02.jpg') }} width=20%>
+			</div>
+
+			<br/>
+			<hr/>
+			<p>Person 3</p>
+			<div id="person3">
+				<img src={{ url_for('static', filename='gallery/happy03.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad03.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry03.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference03.jpg') }} width=20%>
+			</div>
+
+			<br/>
+			<hr/>
+			<p>Happy</p>
+			<div id="happy_img">
+				<img src={{ url_for('static', filename='gallery/happy1.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/happy2.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/happy3.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/happy4.jpg') }} width=20%>
+			</div>
+
+			<br />
+			<hr />
+			<p>Sad</p>
+			<div id="sad_img">
+				<img src={{ url_for('static', filename='gallery/sad1.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad2.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad3.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/sad4.jpg') }} width=20%>
+			</div>
+
+			<br />
+			<hr />
+			<p>Angry</p>
+			<div id="angry_img">
+				<img src={{ url_for('static', filename='gallery/angry1.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry2.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry3.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/angry4.jpg') }} width=20%>
+			</div>
+
+			<br />
+			<hr />
+			<p>Normal</p>
+			<div id="indifference_img">
+				<img src={{ url_for('static', filename='gallery/indifference1.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference2.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference3.jpg') }} width=20%>
+				<img src={{ url_for('static', filename='gallery/indifference4.jpg') }} width=20%>
+			</div>
+
+		</div>
+
+	</div>
+	<br/>
+	<br/>
+<!-- 	<br/>
+	<br/>
+	<br/> -->
+
+
+
+
+	<section class="vibrant centered">
+	  <div class="container">
+	    <h4> Build a better world with Artificial Intelligence together.</h4>
+
+	  </div>
+	</section>
+
+	<footer>
+	  <div class="container">
+	    <!-- <p> &copy; 2018 wsl2 | Contact Info: wsl2_imageprocessing@163.com | <img src={{ qrcode }} align="right" width="7%"/></p> -->
+	    <p> &copy; 2018 wsl2 | Contact Info: wsl2_imageprocessing@163.com | <img src={{ url_for('static', filename='blacktemplate/qr.png') }} align="right" width="7%"/></p>
+	  </div>
+	</footer>
+
+
+</body>
+
+<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+
+
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/layout.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.localscroll-1.2.7.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.scrollTo-1.4.3.1.js') }}"></script>
+<script src="{{ url_for('static',filename='js/placeImage.js') }}"></script>
+<script type="text/javascript">
+	    $(". ").on('click',function(e){  
+         var e = window.event || e  
+         e.preventDefault();  
+         var rid=$(this).children('a').attr('href');  
+      
+         $('body,html').animate({scrollTop:$(rid).offset().top-120},500,function(){  
+              $(rid).css('background','#B0C4DE').siblings().css('background','none')  
+         })  
+    });  
+</script>
+
+</html>
