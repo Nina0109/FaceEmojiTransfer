@@ -11,3 +11,5 @@ To test on remote server. Please run:
 > cd classproject/flask
 > python app.py
 
+The system takes a face image as input and will generate several other expression for the same person.
+Thes interace is as follow.
