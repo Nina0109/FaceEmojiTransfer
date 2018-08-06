@@ -17,7 +17,8 @@ Thes interace is as follow.
 <img src="https://raw.githubusercontent.com/Nina0109/FaceEmojiTransfer/master/webdemo.png" alt="alt text" align="middle" height="500">
 
 Some generated examples:
-<div>Original Input &nbsp&nbsp&nbsp&nbsp&nbsp Happy &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Angry &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sad
+<div>Original Input &nbsp&nbsp&nbsp&nbsp&nbsp Happy &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Angry &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sad</div>
+<div>
   <img src="https://raw.githubusercontent.com/Nina0109/FaceEmojiTransfer/master/static/gallery/origin1.jpg" alt="alt text" align="middle" width="100">
   <img src="https://raw.githubusercontent.com/Nina0109/FaceEmojiTransfer/master/static/gallery/happy1.jpg" alt="alt text" align="middle" width="100">
   <img src="https://raw.githubusercontent.com/Nina0109/FaceEmojiTransfer/master/static/gallery/angry1.jpg" alt="alt text" align="middle" width="100">
